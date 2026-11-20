@@ -34,7 +34,7 @@ jobs:
         working-directory: source/Huangbo-portfolio-github-lite
         run: |
           mkdir -p "$RUNNER_TEMP/portfolio"
-          cp -R assets index.html case.html content.js site.js style.css "$RUNNER_TEMP/portfolio/"
+          cp -R assets index.html case.html content.js site.js style.css glass-preview.css glass-preview.js "$RUNNER_TEMP/portfolio/"
       - name: Upload the site
         uses: actions/upload-pages-artifact@v4
         with:
