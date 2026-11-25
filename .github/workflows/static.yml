@@ -25,7 +25,7 @@ jobs:
         uses: actions/checkout@v6
         with:
           repository: nick1210819187/Nick-s-Portfolio.github.io
-          ref: main
+          ref: ba08167c520599f75965ddd8a629267c769bb24e
           path: source
           persist-credentials: false
       - name: Configure Pages
@@ -34,7 +34,7 @@ jobs:
         working-directory: source/Huangbo-portfolio-github-lite
         run: |
           mkdir -p "$RUNNER_TEMP/portfolio"
-          cp -R assets index.html case.html content.js site.js style.css glass-preview.css glass-preview.js "$RUNNER_TEMP/portfolio/"
+          cp -R assets index.html case.html reconstruction.html content.js site.js style.css glass-preview.css glass-preview.js "$RUNNER_TEMP/portfolio/"
       - name: Upload the site
         uses: actions/upload-pages-artifact@v4
         with:
